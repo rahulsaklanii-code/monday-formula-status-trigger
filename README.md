@@ -6,7 +6,7 @@
 
 ## 🚀 Overview
 
-Monday.com's automations can't trigger on formula columns. **Formula Status Trigger** solves this by automatically converting your formula results into status labels that **can** trigger automations.
+Monday.com's automations can't trigger on formula columns. **Formula Status Trigger** solves this  by automatically converting your formula results into status labels that **can** trigger automations.
 
 ### How It Works
 
@@ -262,3 +262,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ---
 
 Made with ❤️ for the Monday.com community
+
