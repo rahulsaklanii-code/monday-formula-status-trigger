@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "src/server.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/webhook",
+            "dest": "src/server.js",
+            "methods": [
+                "POST"
+            ]
+        },
+        {
+            "src": "/health",
+            "dest": "src/server.js",
+            "methods": [
+                "GET"
+            ]
+        },
+        {
+            "src": "/(.*)",
+            "dest": "src/server.js"
+        }
+    ],
+    "env": {
+        "MONDAY_API_TOKEN": "@monday_api_token",
+        "MONDAY_SIGNING_SECRET": "@monday_signing_secret",
+        "STATUS_COLUMN_ID": "@status_column_id"
+    }
+}
